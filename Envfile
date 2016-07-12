@@ -1,0 +1,6 @@
+enable_defaults! { ENV['RACK_ENV'] != 'production' }
+
+variable :REDISTOGO_URL, :string, default: 'redis://127.0.0.1:6379'
+variable :HIPCHAT_JID, :string
+variable :HIPCHAT_PASSWORD, :string
+variable :ROBOT_ADMINS, :string
