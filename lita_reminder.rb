@@ -4,7 +4,7 @@ module Lita
   module Schedules
     class Reminder < Schedule
 
-      cron('00 18 * * 1-5 Asia/Kuala_Lumpur', :standup_reminder)
+      cron('09 18 * * 1-5 Asia/Kuala_Lumpur', :standup_reminder)
       def standup_reminder
         robot.persisted_rooms.each do |room|
           target = Source.new(room: Room.new("#{room}@conf.hipchat.com"))
