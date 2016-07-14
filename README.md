@@ -1,27 +1,32 @@
 # Reminder Bot
 
 ## Setup
-* Sign up a HipChat account for standup bot with the name `Reminder`
+* Sign up a HipChat account for Reminder bot with the name `Reminder`
 * Ensure all environment variables are setup
-* Instruction for adding Standup Bot to [private room](#joining-private-room) and [public room](#joining-public-room)
+* Instruction for adding Reminder Bot to [private room](#joining-private-room) and [public room](#joining-public-room)
+
+## Local development environment
+* Start Redis server using command `redis-server`
+* Use `bundle exec lita` to start Lita server
 
 ## Joining private room
-`Invite People` > Select `Standup` > Click `Invite People`
-After inviting Standup to the private chatroom, go to private chatroom with Standup
+`Invite People` > Select `Reminder` > Click `Invite People`
+After inviting Reminder to the private chatroom, go to private chatroom with Reminder
 `join ROOM_ID`
 
 ## Joining public room
-Go to private chatroom with Standup
+Go to private chatroom with Reminder
 `join ROOM_ID`
 
 ## Help
-Use `help` in Standup Bot's private chatroom to S.O.S.
+Use `help` in Reminder Bot's private chatroom to S.O.S.
 
 ## Deploy to Heroku
 Use Heroku's RedisToGo Addons to your application.
+REDISTOGO_URL for development environment: `redis://localhost:6379`
 
 ## HipChat Jabber ID/Room ID
 All JID/ROOM_ID can be found here ---> https://yourorganisation.hipchat.com/account/xmpp
 
-## Standup Reminder
-Standup Bot will send reminder to the chatroom every weekday on 6pm.
+## Reminder to post standup
+Reminder Bot will send reminder to the chatroom every weekday at 6pm Malaysia Time.
