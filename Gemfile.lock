@@ -37,6 +37,8 @@ GEM
       thor (>= 0.18.1)
     lita-abuse (0.2.0)
       lita (>= 4.6)
+    lita-compliment (0.2.0)
+      lita (>= 4.6)
     lita-dotenv (0.9.0)
       dotenv (~> 2.0)
       lita (>= 4.4)
@@ -85,6 +87,7 @@ DEPENDENCIES
   envied
   lita
   lita-abuse
+  lita-compliment
   lita-dotenv
   lita-hipchat
   lita-schedule
