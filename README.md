@@ -18,6 +18,11 @@
 * Go to private chatroom with Reminder
 * `join ROOM_ID`
 
+## Leaving a room
+* Go to private chatroom with Reminder
+* `part ROOM_ID`
+* Then remove Reminder from the room
+
 ## Help
 * Use `help` in Reminder Bot's private chatroom to S.O.S.
 
